@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>
+  <title>Riverdale Institute of Technology</title>
+  <style>
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f5f7fb; }
+    header { background:linear-gradient(135deg,#003366,#0055a5); color:white; padding:25px; text-align:center; }
+    nav { background:#ffffff; padding:12px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    nav a { color:#003366; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:#0055a5; }
+    section { padding:30px; }
+
+    .banner {
+      position:relative;
+      text-align:center;
+      color:white;
+      margin-bottom:25px;
+    }
+
+    .banner img {
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+      filter:brightness(70%);
+    }
+
+    .banner h2 {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      font-size:32px;
+    }
+
+    .card {
+      background:white;
+      padding:20px;
+      margin:15px 0;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+
+    footer { background:#003366; color:white; text-align:center; padding:15px; margin-top:20px; }
+
+    input, textarea, select { width:100%; padding:10px; margin:6px 0; border-radius:6px; border:1px solid #ccc; }
+    button { padding:10px 20px; background:#0055a5; color:white; border:none; cursor:pointer; border-radius:6px; }
+    button:hover { background:#003366; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Riverdale Institute of Technology</h1>
+  <p>Empowering Future Innovators</p>
+</header>
+
+<nav>
+  <a href="#home" onclick="showPage('home')">Home</a>
+  <a href="#about" onclick="showPage('about')">About</a>
+  <a href="#courses" onclick="showPage('courses')">Courses</a>
+  <a href="#collegeLife" onclick="showPage('collegeLife')">College Life</a>
+  <a href="#exam" onclick="showPage('exam')">Entrance Exam</a>
+  <a href="#register" onclick="showPage('register')">Register</a>
+  <a href="#contact" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a">
+    <h2>Welcome to Riverdale Institute</h2>
+  </div>
+
+  <div class="hero">
+    <h2>Welcome to Riverdale Institute of Technology</h2>
+    <p>Providing quality education in engineering and technology.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Why Choose Riverdale?</h3>
+      <p>Experienced faculty, modern labs, and industry-focused learning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To be a center of excellence in engineering and innovation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Campus Facilities</h3>
+      <p>Smart classrooms, hostels, sports complex, and high-speed Wi-Fi.</p>
+    </div>
+
+    <div class="card">
+      <h3>Placements</h3>
+      <p>Top recruiters and strong placement support for all students.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+    <h2>About Our Institution</h2>
+  </div>
+  <h2>About Us</h2>
+  <div class="card">
+    <p>Riverdale Institute of Technology was established in 2005 with a vision to provide world-class education in engineering and technology. The institute is known for its academic excellence, modern infrastructure, and strong industry connections.</p>
+  </div>
+
+  <div class="card">
+    <h3>Our Vision</h3>
+    <p>To be a globally recognized institution that nurtures innovation, leadership, and technical excellence.</p>
+  </div>
+
+  <div class="card">
+    <h3>Our Mission</h3>
+    <ul>
+      <li>Provide quality education with practical exposure</li>
+      <li>Encourage research and innovation</li>
+      <li>Develop socially responsible professionals</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Infrastructure</h3>
+    <ul>
+      <li>State-of-the-art laboratories</li>
+      <li>Digital library with thousands of resources</li>
+      <li>Smart classrooms</li>
+      <li>Hostel and transport facilities</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Achievements</h3>
+    <ul>
+      <li>Ranked among top engineering colleges</li>
+      <li>High placement rate every year</li>
+      <li>Students winning national-level competitions</li>
+    </ul>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <h2>Courses Offered</h2>
+  </div>
+  <h2>Courses Offered</h2>
+
+  <div class="card">
+    <h3>Undergraduate Programs (B.Tech)</h3>
+    <ul>
+      <li>Computer Science Engineering</li>
+      <li>Electronics and Communication Engineering</li>
+      <li>Mechanical Engineering</li>
+      <li>Civil Engineering</li>
+      <li>Information Technology</li>
+      <li>Artificial Intelligence & Machine Learning</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Postgraduate Programs (M.Tech)</h3>
+    <ul>
+      <li>Data Science</li>
+      <li>Artificial Intelligence</li>
+      <li>Structural Engineering</li>
+      <li>VLSI Design</li>
+      <li>Thermal Engineering</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Diploma Courses</h3>
+    <ul>
+      <li>Diploma in Mechanical Engineering</li>
+      <li>Diploma in Civil Engineering</li>
+      <li>Diploma in Electrical Engineering</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Certification Courses</h3>
+    <ul>
+      <li>Full Stack Web Development</li>
+      <li>Python Programming</li>
+      <li>Data Analytics</li>
+      <li>Cyber Security</li>
+    </ul>
+  </div>
+</section>
+
+<!-- COLLEGE LIFE PAGE -->
+<section id="collegeLife" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+    <h2>College Life</h2>
+  </div>
+  <h2>College Life at Riverdale</h2>
+
+  <div class="card">
+    <h3>Hostel Life</h3>
+    <p>Life in the Riverdale hostels is vibrant, safe, and full of opportunities for personal growth. Students from diverse backgrounds live together, creating a dynamic and inclusive environment.</p>
+    <ul>
+      <li>Separate hostels for boys and girls with 24/7 security</li>
+      <li>Comfortable rooms with Wi-Fi and study areas</li>
+      <li>Hygienic mess providing nutritious meals</li>
+      <li>Common rooms with TV, indoor games, and recreational activities</li>
+      <li>Regular cultural and sports activities inside hostels</li>
+    </ul>
+    <p>Hostel life helps students build friendships, learn independence, and develop essential life skills.</p>
+  </div>
+
+  <div class="card">
+    <h3>Cultural Fest - Riviera</h3>
+    <p><strong>Riviera</strong> is the grand annual cultural festival of Riverdale Institute of Technology. It is one of the most awaited events of the year, attracting participants from colleges across the country.</p>
+    <ul>
+      <li>Music concerts, dance battles, and drama performances</li>
+      <li>Fashion shows, art exhibitions, and literary competitions</li>
+      <li>Technical events, coding contests, and hackathons</li>
+      <li>Celebrity appearances and live shows</li>
+      <li>Food stalls, fun games, and campus-wide celebrations</li>
+    </ul>
+    <p>Riviera showcases talent, creativity, and the energetic spirit of students, making campus life exciting and memorable.</p>
+  </div>
+</section>
+
+<!-- ENTRANCE EXAM PAGE -->
+<section id="exam" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+    <h2>Entrance Exam</h2>
+  </div>
+  <h2>Entrance Exam Information</h2>
+  <div class="card">
+    <h3>Exam Name</h3>
+    <p>Riverdale Engineering Entrance Test (REET)</p>
+  </div>
+  <div class="card">
+    <h3>Eligibility</h3>
+    <ul>
+      <li>Must have completed 12th with Physics, Chemistry, Mathematics</li>
+      <li>Minimum 50% marks</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Exam Pattern</h3>
+    <ul>
+      <li>Mode: Online</li>
+      <li>Duration: 2 hours</li>
+      <li>Subjects: Physics, Chemistry, Mathematics</li>
+      <li>Type: Multiple Choice Questions</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Important Dates</h3>
+    <ul>
+      <li>Application Start: May 1</li>
+      <li>Exam Date: June 15</li>
+      <li>Results: June 30</li>
+    </ul>
+  </div>
+</section>
+
+<!-- REGISTRATION PAGE -->
+<section id="register" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0">
+    <h2>Register Now</h2>
+  </div>
+  <h2>Student Registration Form</h2>
+  <form onsubmit="registerStudent(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="date" required>
+    <select required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="Address" required></textarea>
+    
+    <h3>Academic Details</h3>
+    <input type="text" placeholder="12th School Name" required>
+    <input type="number" placeholder="12th Percentage" required>
+    
+    <h3>Course Selection</h3>
+    <select required>
+      <option value="">Select Course</option>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+    </select>
+    
+    <h3>Entrance Exam Details</h3>
+    <input type="text" placeholder="Exam Roll Number">
+    <input type="number" placeholder="Score">
+    
+    <button type="submit">Register</button>
+  </form>
+  <p id="regResponse"></p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page" style="display:none">
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+    <h2>Contact Us</h2>
+  </div>
+  <h2>Contact Us</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p id="response"></p>
+</section>
+
+<footer>
+  <p>© 2026 Riverdale Institute of Technology</p>
+</footer>
+
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page'); 
+    pages.forEach(page => page.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+  }
+
+  function submitForm(event) {
+    event.preventDefault();
+    document.getElementById('response').innerText = "Message sent successfully!";
+  }
+
+  function registerStudent(event) {
+    event.preventDefault();
+    document.getElementById('regResponse').innerText = "Registration successful!";
+  }
+</script>
+
+</body>
+</html>
